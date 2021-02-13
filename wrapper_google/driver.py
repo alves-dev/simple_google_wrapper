@@ -38,8 +38,7 @@ class Driver:
                 logging.info(f'{str(file["title"])} downloaded!')
             except Exception as error:
                 logging.error(error)
-                return False
-            return list_downloaded
+        return list_downloaded
 
     def get_archives_list(self) -> list:
         try:
