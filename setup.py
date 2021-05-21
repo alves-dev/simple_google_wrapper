@@ -8,5 +8,5 @@ setup(name='simple_google_wrapper',
       author='Igor Moreira',
       author_email='alvesmoreiraigor@gmail.com',
       license='MIT',
-      packages=['driver', 'wrapper_google'],
+      packages=['driver', 'gmail', 'wrapper_google'],
       zip_safe=False)
