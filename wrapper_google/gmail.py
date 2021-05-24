@@ -22,7 +22,7 @@ class Gmail:
         for message in messages:
             email = GmailClient.get_email(message['id'], self.service)['message']
             decode = DecodeEmail.decode(email)
-            list_mails.append(decode)
+            list_mails.append({'message': decode, 'id': message['id']})
             if self.mark_read:
                 GmailClient.post_modify_mark_read(message['id'], self.service)
 
