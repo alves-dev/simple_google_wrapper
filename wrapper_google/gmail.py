@@ -28,7 +28,7 @@ class Gmail:
 
         return list_mails
 
-    def mark_read(self, mail_id) -> None:
+    def mark_read_id(self, mail_id) -> None:
         try:
             GmailClient.post_modify_mark_read(mail_id, self.service)
         except Exception as error:
